@@ -1,24 +1,30 @@
 // document.querySelector<HTMLDivElement>("#app")!.innerHTML = ``;
-const link_list = [
-  ...document.querySelectorAll<HTMLAnchorElement>("[data-active]"),
-];
+document.onreadystatechange = () => {
+  if (document.readyState === "complete") {
+    const project_list = document.getElementById("projects");
 
-function toggle_active(links: HTMLAnchorElement[]) {
-  links.forEach((link) => active_link(link, () => toggle_disable(links)));
-}
-function active_link(link: HTMLAnchorElement, callback?: () => void) {
-  link.onclick = () => {
-    if (callback) callback();
-    link.setAttribute("data-active", "true");
-  };
-}
+    const link_list = [
+      ...document.querySelectorAll<HTMLAnchorElement>("[data-active]"),
+    ];
 
-function disable_link(link: HTMLAnchorElement) {
-  link.setAttribute("data-active", "false");
-}
+    function toggle_active(links: HTMLAnchorElement[]) {
+      links.forEach((link) => active_link(link, () => toggle_disable(links)));
+    }
+    function active_link(link: HTMLAnchorElement, callback?: () => void) {
+      link.onclick = () => {
+        if (callback) callback();
+        link.setAttribute("data-active", "true");
+      };
+    }
 
-function toggle_disable(links: HTMLAnchorElement[]): void {
-  links.forEach(disable_link);
-}
+    function disable_link(link: HTMLAnchorElement) {
+      link.setAttribute("data-active", "false");
+    }
 
-toggle_active(link_list);
+    function toggle_disable(links: HTMLAnchorElement[]): void {
+      links.forEach(disable_link);
+    }
+
+    toggle_active(link_list);
+  }
+};
