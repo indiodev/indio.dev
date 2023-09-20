@@ -1,7 +1,7 @@
 // document.querySelector<HTMLDivElement>("#app")!.innerHTML = ``;
 document.onreadystatechange = () => {
   if (document.readyState === "complete") {
-    const project_list = document.getElementById("projects");
+    // const project_list = document.getElementById("projects");
 
     const link_list = [
       ...document.querySelectorAll<HTMLAnchorElement>("[data-active]"),
