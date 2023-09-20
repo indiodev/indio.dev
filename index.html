@@ -9,7 +9,7 @@
   </head>
   <body class="bg-app-black flex flex-col items-center">
     <!-- HEADER - INITIAL -->
-    <header class="py-10 fixed bg-app-black w-full">
+    <header class="py-10 fixed bg-app-black w-full z-10">
       <nav class="flex w-full justify-center px-4 md:px-0 xl:px-0">
         <ul class="flex gap-4">
           <li>
@@ -72,17 +72,79 @@
       <div
         class="flex flex-col items-center md:items-start xl:items-start gap-4 w-full md:w-auto"
       >
-        <span class="bg-[#171717] p-2 rounded-xl w-fit">👋 hello!</span>
+        <label class="bg-[#171717] p-2 rounded-xl w-fit"
+          >👋
+          <span
+            class="font-bold text-transparent bg-clip-text bg-gradient-to-br from-[#77EED7] to-[#88FF9A]"
+            >hello!</span
+          ></label
+        >
         <div
           class="flex flex-row gap-4 md:gap-0 xl:gap-0 md:flex-col xl:flex-col"
         >
-          <h2 class="text-6xl">Marcos</h2>
-          <h2 class="text-6xl">Jhollyfer</h2>
+          <h2
+            class="text-4xl md:text-5xl xl:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-br from-[#77EED7] to-[#88FF9A]"
+          >
+            Marcos
+          </h2>
+          <h2
+            class="text-4xl md:text-5xl xl:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-br from-[#77EED7] to-[#88FF9A]"
+          >
+            Jhollyfer
+          </h2>
         </div>
         <p>Software Engineer & Developer</p>
         <ul class="flex gap-4">
-          <li><a href="#">Linkedin</a></li>
-          <li><a href="#">Github</a></li>
+          <li>
+            <a href="https://linkedin.com/in/jhollyfer" target="_blank"
+              ><svg
+                width="32"
+                height="33"
+                viewBox="0 0 32 33"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_11_666)">
+                  <path
+                    d="M15.9999 0.238281C24.837 0.238281 32 7.40228 32 16.2383C32 25.0744 24.837 32.2383 15.9999 32.2383C7.1629 32.2383 0 25.0743 0 16.2383C0 7.40239 7.16301 0.238281 15.9999 0.238281Z"
+                    fill="white"
+                  />
+                  <path
+                    d="M9.01598 22.2222H12.012V12.2362H9.01598V22.2222ZM20.688 11.8903C19.234 11.8903 17.933 12.4213 17.0101 13.5933V12.2034H14.0031V22.2223H17.0101V16.8043C17.0101 15.6593 18.0591 14.5423 19.3731 14.5423C20.687 14.5423 21.0111 15.6593 21.0111 16.7763V22.2214H24.0071V16.5533C24.007 12.6163 22.143 11.8903 20.688 11.8903ZM10.5 11.2383C11.328 11.2383 12 10.5662 12 9.73822C12 8.9102 11.328 8.23828 10.5 8.23828C9.67197 8.23828 8.99994 8.91031 8.99994 9.73833C8.99994 10.5663 9.67197 11.2383 10.5 11.2383Z"
+                    fill="#08070B"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_11_666">
+                    <rect
+                      width="32"
+                      height="32"
+                      fill="white"
+                      transform="translate(0 0.238281)"
+                    />
+                  </clipPath>
+                </defs>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/jhollyferr" target="_blank"
+              ><svg
+                width="34"
+                height="33"
+                viewBox="0 0 34 33"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M16.7381 0.571533C7.67448 0.571533 0.333374 7.91264 0.333374 16.9762C0.333374 24.2353 5.02922 30.3666 11.5501 32.5402C12.3703 32.6837 12.6779 32.1916 12.6779 31.761C12.6779 31.3714 12.6574 30.0795 12.6574 28.7056C8.53572 29.4643 7.46942 27.7008 7.14133 26.778C6.95677 26.3064 6.15704 24.8505 5.45984 24.4609C4.88568 24.1533 4.06544 23.3946 5.43934 23.3741C6.73121 23.3536 7.65397 24.5634 7.96156 25.0555C9.43798 27.5368 11.7962 26.8396 12.7394 26.4089C12.883 25.3426 13.3136 24.6249 13.7852 24.2148C10.1352 23.8047 6.32109 22.3898 6.32109 16.115C6.32109 14.331 6.95677 12.8546 8.00257 11.7062C7.83853 11.2961 7.26436 9.61462 8.16662 7.35898C8.16662 7.35898 9.54051 6.92835 12.6779 9.04046C13.9903 8.67135 15.3847 8.4868 16.7791 8.4868C18.1735 8.4868 19.5679 8.67135 20.8803 9.04046C24.0177 6.90785 25.3916 7.35898 25.3916 7.35898C26.2938 9.61462 25.7197 11.2961 25.5556 11.7062C26.6014 12.8546 27.2371 14.3105 27.2371 16.115C27.2371 22.4103 23.4025 23.8047 19.7524 24.2148C20.3471 24.7275 20.8598 25.7117 20.8598 27.2497C20.8598 29.4438 20.8393 31.2073 20.8393 31.761C20.8393 32.1916 21.1468 32.7042 21.9671 32.5402C28.4469 30.3666 33.1428 24.2148 33.1428 16.9762C33.1428 7.91264 25.8017 0.571533 16.7381 0.571533Z"
+                  fill="white"
+                />
+              </svg>
+            </a>
+          </li>
         </ul>
       </div>
 
@@ -400,8 +462,15 @@
       </svg>
 
       <div class="flex flex-col gap-4">
-        <div class="flex gap-1 items-center justify-end">
-          <span>Baixar CV</span>
+        <a
+          href="./indio-dev-cv.pdf"
+          download
+          class="flex gap-1 items-center justify-center md:justify-end xl:justify-end"
+        >
+          <span
+            class="font-semibold text-transparent bg-clip-text bg-gradient-to-br from-[#77EED7] to-[#88FF9A]"
+            >Baixar CV</span
+          >
           <svg
             width="16"
             height="16"
@@ -428,7 +497,7 @@
               stroke-linejoin="round"
             />
           </svg>
-        </div>
+        </a>
 
         <div
           class="bg-gradient-to-tr from-[#77EED7] to-[#88FF9A] w-fit p-[1px] rounded-md cursor-pointer"
@@ -1814,10 +1883,21 @@
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
               >
-                <path
-                  d="M18.9999 0C29.4939 0 38 8.50725 38 19.0001C38 29.4929 29.4939 38 18.9999 38C8.50594 38 0 29.4928 0 19.0001C0 8.50738 8.50607 0 18.9999 0Z"
-                  fill="white"
-                />
+                <g clip-path="url(#clip0_11_1106)">
+                  <path
+                    d="M18.9999 0C29.4939 0 38 8.50725 38 19.0001C38 29.4929 29.4939 38 18.9999 38C8.50594 38 0 29.4928 0 19.0001C0 8.50738 8.50607 0 18.9999 0Z"
+                    fill="white"
+                  />
+                  <path
+                    d="M10.7065 26.1059H14.2643V14.2475H10.7065V26.1059ZM24.567 13.8368C22.8404 13.8368 21.2954 14.4673 20.1995 15.8591V14.2085H16.6286V26.1061H20.1995V19.6722C20.1995 18.3125 21.4452 16.986 23.0055 16.986C24.5659 16.986 24.9507 18.3125 24.9507 19.6389V26.1049H28.5084V19.3741C28.5083 14.6989 26.2949 13.8368 24.567 13.8368ZM12.4687 13.0625C13.452 13.0625 14.25 12.2644 14.25 11.2812C14.25 10.2979 13.452 9.5 12.4687 9.5C11.4855 9.5 10.6874 10.298 10.6874 11.2813C10.6874 12.2646 11.4855 13.0625 12.4687 13.0625Z"
+                    fill="#171717"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_11_1106">
+                    <rect width="38" height="38" fill="white" />
+                  </clipPath>
+                </defs>
               </svg>
             </a>
           </li>
