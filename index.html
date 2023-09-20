@@ -10,7 +10,7 @@
   <body class="bg-app-black flex flex-col items-center">
     <!-- HEADER - INITIAL -->
     <header class="py-10 fixed bg-app-black w-full">
-      <nav class="flex w-full justify-center">
+      <nav class="flex w-full justify-center px-4 md:px-0 xl:px-0">
         <ul class="flex gap-4">
           <li>
             <a
@@ -67,7 +67,7 @@
 
     <section
       id="home"
-      class="container pt-28 flex flex-col md:flex-row xl:flex-row gap-12 md:gap-0 xl:gap-0 md:justify-between xl:justify-between items-center"
+      class="container pt-28 flex flex-col md:flex-row xl:flex-row gap-12 md:gap-0 xl:gap-0 md:justify-between xl:justify-between items-center px-4 md:px-0 xl:px-0"
     >
       <div
         class="flex flex-col items-center md:items-start xl:items-start gap-4 w-full md:w-auto"
@@ -464,10 +464,10 @@
     </section>
 
     <section
-      class="container inline-grid place-items-center grid-cols-1 gap-20 xl:grid-cols-3 sm:grid-cols-3 py-16"
+      class="container inline-grid place-items-center grid-cols-1 gap-10 md:gap-20 xl:gap-20 xl:grid-cols-3 sm:grid-cols-3 py-16"
     >
       <article
-        class="w-60 xl:w-full h-48 bg-gradient-to-r from-[#31E1F7] to-[#3168F7] rounded-lg p-[2px]"
+        class="w-52 xl:w-full h-48 bg-gradient-to-r from-[#31E1F7] to-[#3168F7] rounded-lg p-[2px]"
       >
         <div
           class="h-full w-full bg-app-black rounded-md flex flex-col items-center justify-center gap-2"
@@ -542,7 +542,7 @@
         </div>
       </article>
       <article
-        class="w-60 xl:w-full h-48 bg-gradient-to-r from-[#31E1F7] to-[#3168F7] rounded-lg p-[2px]"
+        class="w-52 xl:w-full h-48 bg-gradient-to-r from-[#31E1F7] to-[#3168F7] rounded-lg p-[2px]"
       >
         <div
           class="h-full w-full bg-app-black rounded-md flex flex-col items-center justify-center gap-2"
@@ -651,7 +651,7 @@
         </div>
       </article>
       <article
-        class="w-60 xl:w-full h-48 bg-gradient-to-r from-[#31E1F7] to-[#3168F7] rounded-lg p-[2px]"
+        class="w-52 xl:w-full h-48 bg-gradient-to-r from-[#31E1F7] to-[#3168F7] rounded-lg p-[2px]"
       >
         <div
           class="h-full w-full bg-app-black rounded-md flex flex-col items-center justify-center gap-2"
@@ -1405,7 +1405,10 @@
       </div>
     </section>
 
-    <section class="container py-16 flex flex-col gap-32 px-4 md:px-0 xl:px-0">
+    <section
+      id="skills"
+      class="container py-16 flex flex-col gap-32 px-4 md:px-0 xl:px-0"
+    >
       <header class="flex flex-col gap-7 items-center">
         <span class="bg-[#171717] p-2 rounded-xl w-fit"
           >🧑‍💻 Skills · Experiências</span
@@ -1768,9 +1771,9 @@
       </div>
     </section>
 
-    <footer class="bg-[#171717] h-24 w-full flex items-center justify-center">
+    <footer class="bg-[#171717] h-28 w-full flex items-center justify-center">
       <section
-        class="container flex flex-col-reverse md:flex-row xl:flex-row justify-between items-center"
+        class="container flex flex-col-reverse gap-4 md:flex-row xl:flex-row justify-between items-center"
       >
         <div class="flex gap-4 items-center justify-center">
           <svg
@@ -1802,8 +1805,40 @@
         </div>
 
         <ul class="flex gap-5">
-          <li><a href="#">Github</a></li>
-          <li><a href="#">Linkedin</a></li>
+          <li>
+            <a href="https://www.linkedin.com/in/jhollyfer/" target="_blank">
+              <svg
+                width="38"
+                height="38"
+                viewBox="0 0 38 38"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M18.9999 0C29.4939 0 38 8.50725 38 19.0001C38 29.4929 29.4939 38 18.9999 38C8.50594 38 0 29.4928 0 19.0001C0 8.50738 8.50607 0 18.9999 0Z"
+                  fill="white"
+                />
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/jhollyferr" target="_blank"
+              ><svg
+                width="40"
+                height="39"
+                viewBox="0 0 40 39"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M20.0674 0.40332C9.13764 0.40332 0.285034 9.25593 0.285034 20.1857C0.285034 28.9394 5.94773 36.333 13.8112 38.9542C14.8003 39.1273 15.1713 38.5338 15.1713 38.0145C15.1713 37.5447 15.1465 35.9868 15.1465 34.3301C10.1762 35.245 8.89036 33.1184 8.49471 32.0056C8.27216 31.4369 7.30777 29.6812 6.46702 29.2114C5.77464 28.8405 4.78552 27.9255 6.44229 27.9008C8.00015 27.8761 9.11291 29.335 9.48383 29.9285C11.2642 32.9206 14.108 32.0798 15.2454 31.5605C15.4185 30.2747 15.9378 29.4092 16.5066 28.9146C12.105 28.4201 7.5056 26.7139 7.5056 19.1471C7.5056 16.9958 8.27216 15.2154 9.53329 13.8306C9.33546 13.336 8.64308 11.3083 9.73111 8.58827C9.73111 8.58827 11.3879 8.06898 15.1713 10.616C16.7538 10.1709 18.4353 9.94831 20.1168 9.94831C21.7983 9.94831 23.4799 10.1709 25.0624 10.616C28.8458 8.04426 30.5026 8.58827 30.5026 8.58827C31.5906 11.3083 30.8982 13.336 30.7004 13.8306C31.9615 15.2154 32.7281 16.971 32.7281 19.1471C32.7281 26.7386 28.104 28.4201 23.7024 28.9146C24.4195 29.5328 25.0377 30.7198 25.0377 32.5744C25.0377 35.2203 25.013 37.3469 25.013 38.0145C25.013 38.5338 25.3839 39.152 26.373 38.9542C34.1871 36.333 39.8498 28.9146 39.8498 20.1857C39.8498 9.25593 30.9971 0.40332 20.0674 0.40332Z"
+                  fill="white"
+                />
+              </svg>
+            </a>
+          </li>
         </ul>
       </section>
     </footer>
