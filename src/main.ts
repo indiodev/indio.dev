@@ -10,6 +10,7 @@ document.onreadystatechange = () => {
     function toggle_active(links: HTMLAnchorElement[]) {
       links.forEach((link) => active_link(link, () => toggle_disable(links)));
     }
+
     function active_link(link: HTMLAnchorElement, callback?: () => void) {
       link.onclick = () => {
         if (callback) callback();

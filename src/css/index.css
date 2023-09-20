@@ -2,24 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
-/* width */
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700;800&display=swap");
+
 ::-webkit-scrollbar {
-  width: 5px;
-  height: 5px;
+  width: 4px;
+  height: 4px;
 }
 
-/* Track */
 ::-webkit-scrollbar-track {
-  background: #000000;
+  background: transparent;
 }
 
-/* Handle */
 ::-webkit-scrollbar-thumb {
   background: #88ff9a;
   border-radius: 5px;
 }
 
-/* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #88ff9a;
 }

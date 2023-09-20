@@ -7,6 +7,9 @@ export default {
         "app-green": "#88FF9A",
         "app-black": "#08070B",
       },
+      fontFamily: {
+        raleway: ["Raleway", "sans-serif"],
+      },
     },
   },
   plugins: [],
