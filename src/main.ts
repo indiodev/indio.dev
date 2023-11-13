@@ -1,4 +1,3 @@
-// document.querySelector<HTMLDivElement>("#app")!.innerHTML = ``;
 document.onreadystatechange = () => {
   if (document.readyState === "complete") {
     // const project_list = document.getElementById("projects");
